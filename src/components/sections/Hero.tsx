@@ -134,16 +134,14 @@ export default function Hero() {
         transition={{ delay: 1.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
-        <motion.button
-          onClick={scrollToProjects}
+        <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="flex flex-col items-center gap-2 text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors"
-          data-cursor="pointer"
+          className="flex flex-col items-center gap-2 text-[var(--text-tertiary)] pointer-events-none select-none"
         >
           <span className="text-xs uppercase tracking-widest">Scroll</span>
           <ArrowDown size={20} />
-        </motion.button>
+        </motion.div>
       </motion.div>
     </section>
   );
