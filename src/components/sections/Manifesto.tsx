@@ -24,7 +24,7 @@ export default function Manifesto() {
               className="text-[var(--text-secondary)]"
             >
               <span className="text-[var(--text-primary)] font-medium">
-                I&apos;m 20, self-taught, building web apps from Aix-en-Provence.
+                I&apos;m 26, self-taught, building web apps from Aix-en-Provence.
               </span>
             </motion.p>
 
