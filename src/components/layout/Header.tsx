@@ -45,8 +45,8 @@ export default function Header() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           isScrolled
-            ? "py-3 bg-[var(--bg-primary)]/80 backdrop-blur-xl border-b border-[var(--border-glass)]"
-            : "py-5 bg-transparent"
+            ? "py-3"
+            : "py-5"
         )}
       >
         <div className="wrapper flex items-center justify-between">
@@ -62,22 +62,23 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
-            {navItems.map((item, index) => (
-              <motion.button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="px-4 py-2 text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors rounded-lg hover:bg-[var(--bg-glass)] relative group"
-                data-cursor="pointer"
-              >
-                {item.name}
-                <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] group-hover:w-4/5 transition-all duration-300" />
-              </motion.button>
-            ))}
+          {/* Desktop Navigation — floating pill */}
+          <nav className="hidden md:flex items-center">
+            <div className="flex items-center gap-0.5 px-1.5 py-1.5 rounded-full bg-[var(--bg-secondary)]/80 backdrop-blur-xl border border-[var(--border-glass)]">
+              {navItems.map((item, index) => (
+                <motion.button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href)}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: index * 0.05 }}
+                  className="relative px-3.5 py-1.5 text-[13px] text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors rounded-full"
+                  data-cursor="pointer"
+                >
+                  {item.name}
+                </motion.button>
+              ))}
+            </div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -108,9 +109,9 @@ export default function Header() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="absolute top-20 left-4 right-4 glass-card p-6"
+              className="absolute top-20 left-4 right-4 rounded-2xl bg-[var(--bg-secondary)]/95 backdrop-blur-xl border border-[var(--border-glass)] p-4"
             >
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1">
                 {navItems.map((item, index) => (
                   <motion.button
                     key={item.name}
@@ -118,7 +119,7 @@ export default function Header() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.05 }}
-                    className="text-left px-4 py-3 text-lg text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-glass)] rounded-lg transition-colors"
+                    className="text-left px-4 py-3 text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-white/5 rounded-xl transition-colors"
                   >
                     {item.name}
                   </motion.button>
