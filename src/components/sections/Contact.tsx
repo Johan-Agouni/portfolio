@@ -56,10 +56,10 @@ export default function Contact() {
       const emailjs = await import("@emailjs/browser");
 
       await emailjs.sendForm(
-        "YOUR_SERVICE_ID",   // TODO: Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID",  // TODO: Replace with your EmailJS template ID
+        "service_0dv4qpj",
+        "template_29uip4m",
         formRef.current!,
-        "YOUR_PUBLIC_KEY"    // TODO: Replace with your EmailJS public key
+        "s2nL-AaYOZ74jHx0E"
       );
 
       setIsSubmitted(true);
