@@ -54,7 +54,6 @@ export default function About() {
       <div className="wrapper flex flex-col items-center">
         <SectionHeading
           title="About"
-          subtitle="Passionate about web development for over 2 years, I build applications that combine performance, design and user experience."
         />
 
         <div className="w-full grid lg:grid-cols-2 gap-12 items-center">
@@ -66,6 +65,14 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             className="space-y-6"
           >
+            <motion.p
+              variants={staggerItem}
+              className="text-lg text-[var(--text-secondary)]"
+            >
+              Passionate about web development for over 2 years, I build
+              applications that combine performance, design and user experience.
+            </motion.p>
+
             <motion.p
               variants={staggerItem}
               className="text-lg text-[var(--text-secondary)]"
