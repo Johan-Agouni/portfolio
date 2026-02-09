@@ -35,11 +35,11 @@ export default function Manifesto() {
               viewport={{ once: true }}
               className="text-[var(--text-secondary)]"
             >
-              I use AI tools heavily and I&apos;m not ashamed of it — what
-              matters is that I ship products that work. I don&apos;t have 10
-              years of experience or a CS degree. What I have is 4 real
-              projects, an obsession for clean code, and the ability to learn
-              anything fast.
+              I didn&apos;t wait for a degree to start building. I use AI
+              tools heavily and I&apos;m not ashamed of it — what matters is
+              that I ship products that work. What I have is 4 real projects,
+              an obsession for clean code, and the ability to learn anything
+              fast.
             </motion.p>
 
             <motion.p
