@@ -80,22 +80,6 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <motion.a
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("#contact");
-            }}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5 }}
-            className="hidden md:inline-flex btn btn-primary text-sm"
-            data-cursor="pointer"
-          >
-            Get in touch
-          </motion.a>
-
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -139,19 +123,6 @@ export default function Header() {
                     {item.name}
                   </motion.button>
                 ))}
-                <motion.a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("#contact");
-                  }}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.3 }}
-                  className="btn btn-primary mt-4 text-center"
-                >
-                  Get in touch
-                </motion.a>
               </div>
             </motion.nav>
           </motion.div>
