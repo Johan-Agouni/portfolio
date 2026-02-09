@@ -62,23 +62,21 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Desktop Navigation — floating pill */}
-          <nav className="hidden md:flex items-center">
-            <div className="flex items-center gap-0.5 px-1.5 py-1.5 rounded-full bg-white/[0.06] backdrop-blur-xl border border-white/[0.12] shadow-lg shadow-black/20">
-              {navItems.map((item, index) => (
-                <motion.button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: index * 0.05 }}
-                  className="relative px-3.5 py-1.5 text-[13px] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-white/[0.08] transition-all rounded-full"
-                  data-cursor="pointer"
-                >
-                  {item.name}
-                </motion.button>
-              ))}
-            </div>
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            {navItems.map((item, index) => (
+              <motion.button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                className="text-sm text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors duration-200"
+                data-cursor="pointer"
+              >
+                {item.name}
+              </motion.button>
+            ))}
           </nav>
 
           {/* Mobile Menu Button */}
