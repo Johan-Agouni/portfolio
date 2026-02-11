@@ -101,7 +101,7 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-5 pb-3">
                   {project.links.github && (
                     <a
                       href={project.links.github}
