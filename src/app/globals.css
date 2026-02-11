@@ -57,6 +57,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+input, textarea {
+  -webkit-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+
+a, button, [data-cursor="pointer"] {
+  cursor: pointer;
 }
 
 html {
