@@ -57,7 +57,7 @@ export default function Projects() {
               </div>
 
               {/* Content */}
-              <div className="p-5 md:px-8 md:py-6">
+              <div className="p-5 md:px-8 md:py-6" style={{ paddingBottom: "2rem" }}>
                 {/* Title */}
                 <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[var(--accent-primary)] transition-colors">
                   {project.title}
