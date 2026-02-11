@@ -17,10 +17,10 @@ export default function AnimatedText({
   gradient = false,
 }: AnimatedTextProps) {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center" translate="no">
       <Component
         className={cn(
-          "inline-flex flex-wrap justify-center",
+          "inline-flex flex-wrap justify-center notranslate",
           gradient && "gradient-text",
           className
         )}

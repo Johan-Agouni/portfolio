@@ -53,8 +53,9 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-xl font-bold tracking-tight group"
+            className="text-xl font-bold tracking-tight group notranslate"
             data-cursor="pointer"
+            translate="no"
           >
             <span className="gradient-text">Johan</span>
             <span className="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">

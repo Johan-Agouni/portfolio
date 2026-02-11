@@ -72,6 +72,7 @@ export default function Hero() {
           <motion.p
             variants={fadeInUp}
             className="text-xl md:text-2xl text-[var(--text-secondary)] mb-4"
+            translate="no"
           >
             <GradientText animate>Full-Stack</GradientText>
             {" "}Developer
@@ -83,7 +84,7 @@ export default function Hero() {
             className="text-[var(--text-tertiary)] text-base md:text-lg max-w-2xl mx-auto mb-12"
           >
             I design and build modern, high-performance and secure web applications.
-            Specialized in React, Next.js, Node.js and TypeScript.
+            Specialized in <span className="notranslate">React</span>, <span className="notranslate">Next.js</span>, <span className="notranslate">Node.js</span> and <span className="notranslate">TypeScript</span>.
           </motion.p>
 
           {/* CTA Buttons */}

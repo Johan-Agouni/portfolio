@@ -41,7 +41,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="text-2xl font-bold tracking-tight">
+            <Link href="/" className="text-2xl font-bold tracking-tight notranslate" translate="no">
               <span className="gradient-text">Johan</span>
               <span className="text-[var(--text-secondary)]">.dev</span>
             </Link>
@@ -98,13 +98,13 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-[var(--border-glass)] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[var(--text-tertiary)] text-sm flex items-center gap-1">
-            © {currentYear} Johan Agouni. Made with
+            © {currentYear} <span className="notranslate">Johan Agouni</span>. Made with
             <Heart size={14} className="text-[var(--accent-tertiary)] fill-current" />
             in Aix-en-Provence
           </p>
           <p className="text-[var(--text-tertiary)] text-xs">
             Design & Développement par{" "}
-            <span className="gradient-text font-medium">Johan Agouni</span>
+            <span className="gradient-text font-medium notranslate">Johan Agouni</span>
           </p>
         </div>
       </div>

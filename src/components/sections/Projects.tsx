@@ -59,7 +59,7 @@ export default function Projects() {
               {/* Content */}
               <div className="p-5 md:px-8 md:py-6 flex flex-col flex-1" style={{ paddingBottom: "2rem" }}>
                 {/* Title */}
-                <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[var(--accent-primary)] transition-colors">
+                <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[var(--accent-primary)] transition-colors notranslate" translate="no">
                   {project.title}
                 </h3>
 
@@ -81,7 +81,7 @@ export default function Projects() {
                 </div>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-1.5 mb-5">
+                <div className="flex flex-wrap gap-1.5 mb-5 notranslate" translate="no">
                   {project.techStack.frontend?.slice(0, 3).map((tech, techIndex) => (
                     <span
                       key={`frontend-${techIndex}`}

@@ -65,7 +65,7 @@ export default function Manifesto() {
             className="mt-10 pt-8 border-t border-[var(--border-glass)]"
           >
             <p className="text-sm text-[var(--text-tertiary)] italic">
-              — Johan, somewhere between a terminal and a coffee machine
+              — <span className="notranslate">Johan</span>, somewhere between a terminal and a coffee machine
             </p>
           </motion.div>
         </motion.div>

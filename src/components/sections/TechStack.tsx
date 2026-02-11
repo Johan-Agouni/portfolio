@@ -41,7 +41,7 @@ const categories = [
 
 export default function TechStack() {
   return (
-    <section id="tech" className="section bg-[var(--bg-secondary)]/30">
+    <section id="tech" className="section bg-[var(--bg-secondary)]/30" translate="no">
       <div className="wrapper flex flex-col items-center">
         <SectionHeading
           title="Tech Stack"
