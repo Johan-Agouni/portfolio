@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, MapPin, Github, Linkedin, ArrowRight, AlertCircle } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -44,7 +44,30 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const [highlightForm, setHighlightForm] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
+
+  const flashForm = useCallback(() => {
+    setHighlightForm(true);
+    setTimeout(() => setHighlightForm(false), 2000);
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && window.location.hash === "#contact") {
+            setTimeout(flashForm, 400);
+            window.history.replaceState(null, "", window.location.pathname);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    const section = document.querySelector("#contact");
+    if (section) observer.observe(section);
+    return () => observer.disconnect();
+  }, [flashForm]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -193,7 +216,15 @@ export default function Contact() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <form ref={formRef} onSubmit={handleSubmit} className="glass-card p-8 space-y-6">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="glass-card p-8 space-y-6 transition-all duration-700"
+              style={highlightForm ? {
+                borderColor: "var(--accent-primary)",
+                boxShadow: "0 0 30px rgba(99, 102, 241, 0.3), 0 0 60px rgba(99, 102, 241, 0.1)",
+              } : {}}
+            >
               {/* Name */}
               <div className="space-y-2">
                 <label
