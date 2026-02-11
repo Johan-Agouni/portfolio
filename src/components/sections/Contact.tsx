@@ -98,10 +98,10 @@ export default function Contact() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="space-y-14"
+            style={{ display: "flex", flexDirection: "column", gap: "3.5rem" }}
           >
             {/* Info Cards */}
-            <div className="space-y-8">
+            <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
               {contactInfo.map((info, index) => (
                 <motion.div
                   key={index}
