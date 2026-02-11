@@ -106,12 +106,13 @@ export default function TechStack() {
         </motion.div>
 
         {/* Floating Tech Badges */}
+        <div className="w-full" style={{ marginTop: "5rem", paddingTop: "3rem" }}>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           viewport={{ once: true }}
-          className="w-full mt-20 pt-12 flex flex-wrap justify-center gap-4"
+          className="flex flex-wrap justify-center gap-4"
         >
           {[
             "REST API",
@@ -135,6 +136,7 @@ export default function TechStack() {
             </motion.span>
           ))}
         </motion.div>
+        </div>
       </div>
     </section>
   );
