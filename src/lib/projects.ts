@@ -50,6 +50,7 @@ export const projects: Project[] = [
     category: "dashboard",
     links: {
       github: "https://github.com/Johan-Agouni/kosma-dashboard",
+      live: "https://kosma-dashboard.vercel.app/login",
     },
     techStack: {
       frontend: ["React 18", "Vite", "React Router v6", "Recharts", "React Hook Form"],
@@ -69,6 +70,7 @@ export const projects: Project[] = [
     category: "api",
     links: {
       github: "https://github.com/Johan-Agouni/atmosphere-api",
+      live: "https://atmosphere-dashboard.vercel.app/",
     },
     techStack: {
       frontend: ["JavaScript", "HTML5", "CSS3", "Globe.gl", "Chart.js"],
@@ -87,6 +89,7 @@ export const projects: Project[] = [
     category: "saas",
     links: {
       github: "https://github.com/Johan-Agouni/invoiceflow",
+      live: "https://invoiceflow-production-6d33.up.railway.app/login",
     },
     techStack: {
       frontend: ["PHP", "Tailwind CSS", "Chart.js"],
