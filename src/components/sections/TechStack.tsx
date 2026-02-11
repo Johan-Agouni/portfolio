@@ -111,7 +111,7 @@ export default function TechStack() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           viewport={{ once: true }}
-          className="mt-20 flex flex-wrap justify-center gap-3"
+          className="mt-32 flex flex-wrap justify-center gap-4"
         >
           {[
             "REST API",
