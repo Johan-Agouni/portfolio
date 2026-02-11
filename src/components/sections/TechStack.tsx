@@ -111,7 +111,7 @@ export default function TechStack() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           viewport={{ once: true }}
-          className="mt-32 flex flex-wrap justify-center gap-4"
+          className="mt-16 pt-16 border-t border-[var(--border-glass)] flex flex-wrap justify-center gap-4"
         >
           {[
             "REST API",
