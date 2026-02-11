@@ -100,34 +100,33 @@ export default function Projects() {
                   ))}
                 </div>
 
-              </div>
-
-              {/* Links */}
-              <div className="flex items-center gap-5 px-5 md:px-8 py-4 border-t border-[var(--border-glass)]">
-                {project.links.github && (
-                  <a
-                    href={project.links.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <Github size={16} strokeWidth={1.5} />
-                    <span>Code</span>
-                  </a>
-                )}
-                {project.links.live && (
-                  <a
-                    href={project.links.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <ExternalLink size={16} strokeWidth={1.5} />
-                    <span>Demo</span>
-                  </a>
-                )}
+                {/* Links */}
+                <div className="flex items-center gap-5">
+                  {project.links.github && (
+                    <a
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <Github size={16} strokeWidth={1.5} />
+                      <span>Code</span>
+                    </a>
+                  )}
+                  {project.links.live && (
+                    <a
+                      href={project.links.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <ExternalLink size={16} strokeWidth={1.5} />
+                      <span>Demo</span>
+                    </a>
+                  )}
+                </div>
               </div>
 
               {/* Bottom Gradient Line */}
