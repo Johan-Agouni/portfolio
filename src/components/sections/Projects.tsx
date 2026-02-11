@@ -26,7 +26,7 @@ export default function Projects() {
             <motion.article
               key={project.id}
               variants={staggerItem}
-              className="group relative rounded-3xl bg-[var(--bg-glass)] border border-[var(--border-glass)] hover:border-[var(--border-glass-hover)] transition-all duration-500"
+              className="group relative flex flex-col rounded-3xl bg-[var(--bg-glass)] border border-[var(--border-glass)] hover:border-[var(--border-glass-hover)] transition-all duration-500"
               style={{
                 boxShadow: `0 0 0 0 ${project.color}00`,
               }}
@@ -57,7 +57,7 @@ export default function Projects() {
               </div>
 
               {/* Content */}
-              <div className="p-5 md:px-8 md:py-6" style={{ paddingBottom: "2rem" }}>
+              <div className="p-5 md:px-8 md:py-6 flex flex-col flex-1" style={{ paddingBottom: "2rem" }}>
                 {/* Title */}
                 <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-2 group-hover:text-[var(--accent-primary)] transition-colors">
                   {project.title}
@@ -101,7 +101,7 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex items-center gap-5 pb-3">
+                <div className="flex items-center gap-5 pb-3 mt-auto">
                   {project.links.github && (
                     <a
                       href={project.links.github}
