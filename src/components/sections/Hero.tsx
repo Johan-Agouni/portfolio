@@ -29,15 +29,15 @@ export default function Hero() {
       {/* Floating Elements */}
       <motion.div
         animate={floatAnimation}
-        className="absolute top-1/4 left-[10%] w-72 h-72 rounded-full bg-[var(--accent-primary)]/10 blur-[100px]"
+        className="absolute top-1/4 left-[10%] w-48 md:w-72 h-48 md:h-72 rounded-full bg-[var(--accent-primary)]/10 blur-[100px]"
       />
       <motion.div
         animate={{ ...floatAnimation, transition: { ...floatAnimation.transition, delay: 1 } }}
-        className="absolute bottom-1/4 right-[10%] w-96 h-96 rounded-full bg-[var(--accent-secondary)]/10 blur-[120px]"
+        className="absolute bottom-1/4 right-[10%] w-56 md:w-96 h-56 md:h-96 rounded-full bg-[var(--accent-secondary)]/10 blur-[120px]"
       />
       <motion.div
         animate={{ ...floatAnimation, transition: { ...floatAnimation.transition, delay: 2 } }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[var(--accent-tertiary)]/5 blur-[150px]"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] md:w-[500px] h-[280px] md:h-[500px] rounded-full bg-[var(--accent-tertiary)]/5 blur-[150px]"
       />
 
       {/* Content */}
@@ -80,7 +80,7 @@ export default function Hero() {
           {/* Description */}
           <motion.p
             variants={fadeInUp}
-            className="text-[var(--text-tertiary)] text-lg max-w-2xl mx-auto mb-12"
+            className="text-[var(--text-tertiary)] text-base md:text-lg max-w-2xl mx-auto mb-12"
           >
             I design and build modern, high-performance and secure web applications.
             Specialized in React, Next.js, Node.js and TypeScript.
@@ -102,7 +102,7 @@ export default function Hero() {
           {/* Stats */}
           <motion.div
             variants={fadeInUp}
-            className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-[var(--border-glass)]"
+            className="grid grid-cols-3 gap-4 md:gap-8 mt-12 md:mt-16 pt-12 md:pt-16 border-t border-[var(--border-glass)]"
           >
             {[
               { value: "2+", label: "Years building" },
@@ -114,7 +114,7 @@ export default function Hero() {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 1 + index * 0.1, type: "spring" }}
-                  className="text-3xl md:text-4xl font-bold gradient-text mb-2"
+                  className="text-2xl md:text-4xl font-bold gradient-text mb-2"
                 >
                   {stat.value}
                 </motion.div>

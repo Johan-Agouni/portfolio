@@ -38,7 +38,7 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-[var(--border-glass)] bg-[var(--bg-secondary)]/50">
       <div className="wrapper py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="text-2xl font-bold tracking-tight">

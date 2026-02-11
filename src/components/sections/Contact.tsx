@@ -91,14 +91,14 @@ export default function Contact() {
           subtitle="Have a project in mind? Let's talk! I'm available for new collaborations."
         />
 
-        <div className="w-full grid lg:grid-cols-2 gap-12 items-start">
+        <div className="w-full grid lg:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Left - Contact Info */}
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            style={{ display: "flex", flexDirection: "column", gap: "3.5rem" }}
+            style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}
           >
             {/* Info Cards */}
             <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
@@ -167,7 +167,7 @@ export default function Contact() {
             {/* CTA */}
             <motion.div
               variants={staggerItem}
-              className="glass-card p-8 space-y-5"
+              className="glass-card p-5 md:p-8 space-y-5"
             >
               <h3 className="text-lg font-semibold text-[var(--text-primary)]">
                 Ready to start your project?
@@ -193,7 +193,7 @@ export default function Contact() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <form ref={formRef} onSubmit={handleSubmit} className="glass-card p-8 space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="glass-card p-5 md:p-8 space-y-6">
               {/* Name */}
               <div className="space-y-2">
                 <label

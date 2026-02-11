@@ -15,7 +15,7 @@ export default function Manifesto() {
           className="max-w-2xl"
         >
           {/* The open letter */}
-          <div className="space-y-6 text-lg md:text-xl leading-relaxed">
+          <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
