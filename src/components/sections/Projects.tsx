@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { projects } from "@/lib/projects";
 import { staggerContainer, staggerItem } from "@/lib/animations";
@@ -65,16 +65,6 @@ export default function Projects() {
                   {project.category}
                 </div>
 
-                {/* Arrow Icon */}
-                <motion.div
-                  className="absolute bottom-4 right-4 w-12 h-12 rounded-full flex items-center justify-center bg-[var(--text-primary)] text-[var(--bg-primary)]"
-                  initial={{ scale: 0, rotate: -45 }}
-                  whileHover={{ scale: 1.1 }}
-                  animate={{ scale: 1, rotate: 0 }}
-                  transition={{ delay: 0.2 + index * 0.1 }}
-                >
-                  <ArrowUpRight size={20} />
-                </motion.div>
               </div>
 
               {/* Content */}
