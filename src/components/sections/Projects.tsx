@@ -49,18 +49,7 @@ export default function Projects() {
                   alt={project.title}
                   className="absolute inset-0 w-full h-full object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                 />
-                {/* Project Number */}
-                <div
-                  className="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold"
-                  style={{
-                    background: `${project.color}20`,
-                    color: project.color,
-                  }}
-                >
-                  0{index + 1}
-                </div>
-
-                {/* Category Badge */}
+{/* Category Badge */}
                 <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[var(--bg-primary)]/80 backdrop-blur-sm text-xs text-[var(--text-secondary)] uppercase tracking-wider">
                   {project.category}
                 </div>
