@@ -105,9 +105,9 @@ export default function Hero() {
             className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-[var(--border-glass)]"
           >
             {[
-              { value: "2+", label: "Years learning" },
-              { value: "4", label: "Projects built" },
-              { value: "100%", label: "Passion driven" },
+              { value: "2+", label: "Years building" },
+              { value: "4", label: "Projects shipped" },
+              { value: "4", label: "APIs deployed" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <motion.div

@@ -176,6 +176,9 @@ export default function Contact() {
                 I&apos;m available for freelance work. Get in touch to discuss
                 your project and get a free quote.
               </p>
+              <p className="text-[var(--text-tertiary)] text-xs">
+                Disponible en France et à l&apos;international.
+              </p>
               <MagneticButton href="mailto:agouni.johan@proton.me" variant="primary">
                 Send an email
                 <ArrowRight size={16} />
