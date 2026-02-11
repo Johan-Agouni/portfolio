@@ -209,7 +209,8 @@ export default function Contact() {
                   value={formState.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl bg-[var(--bg-tertiary)] border border-[var(--border-glass)] text-[var(--text-primary)] placeholder-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent-primary)] transition-colors"
+                  className="w-full rounded-xl bg-[var(--bg-tertiary)] border border-[var(--border-glass)] text-[var(--text-primary)] placeholder-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent-primary)] transition-colors"
+                  style={{ padding: "12px 16px" }}
                   placeholder="John Doe"
                 />
               </div>
@@ -229,7 +230,8 @@ export default function Contact() {
                   value={formState.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl bg-[var(--bg-tertiary)] border border-[var(--border-glass)] text-[var(--text-primary)] placeholder-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent-primary)] transition-colors"
+                  className="w-full rounded-xl bg-[var(--bg-tertiary)] border border-[var(--border-glass)] text-[var(--text-primary)] placeholder-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent-primary)] transition-colors"
+                  style={{ padding: "12px 16px" }}
                   placeholder="john@example.com"
                 />
               </div>
@@ -249,7 +251,8 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 rounded-xl bg-[var(--bg-tertiary)] border border-[var(--border-glass)] text-[var(--text-primary)] placeholder-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent-primary)] transition-colors resize-none"
+                  className="w-full rounded-xl bg-[var(--bg-tertiary)] border border-[var(--border-glass)] text-[var(--text-primary)] placeholder-[var(--text-tertiary)] focus:outline-none focus:border-[var(--accent-primary)] transition-colors resize-none"
+                  style={{ padding: "12px 16px" }}
                   placeholder="Describe your project..."
                 />
               </div>
