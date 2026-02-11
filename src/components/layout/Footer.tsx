@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Heart } from "lucide-react";
 import Link from "next/link";
 
 const socialLinks = [
@@ -14,11 +14,6 @@ const socialLinks = [
     name: "LinkedIn",
     href: "https://linkedin.com/in/johan-agouni",
     icon: Linkedin,
-  },
-  {
-    name: "Email",
-    href: "mailto:agouni.johan@proton.me",
-    icon: Mail,
   },
 ];
 
