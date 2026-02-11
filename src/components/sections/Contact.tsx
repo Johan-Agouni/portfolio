@@ -98,10 +98,10 @@ export default function Contact() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="space-y-10"
+            className="space-y-14"
           >
             {/* Info Cards */}
-            <div className="space-y-6">
+            <div className="space-y-8">
               {contactInfo.map((info, index) => (
                 <motion.div
                   key={index}
